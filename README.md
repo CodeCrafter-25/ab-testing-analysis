@@ -88,6 +88,25 @@ The treatment group showed a decrease of approximately 0.82 percentage points.
 
 The difference was statistically significant (p = 0.001554), suggesting that moving the gate to level 40 negatively affected Day 7 retention.
 
+### Sample Ratio Mismatch (SRM) Validation
+
+A Chi-square goodness-of-fit test was conducted to evaluate whether the observed experiment allocation differed from the assumed 50/50 split.
+
+**Results:**
+- Control group: 44,700 users
+- Treatment group: 45,489 users
+- Chi-square statistic: 6.9024
+- P-value: 0.008608
+- SRM significance threshold: 0.001
+
+**Interpretation:**
+
+No statistically significant sample ratio mismatch was detected at the predefined threshold of 0.001.
+
+However, the p-value is below 0.05, indicating some evidence of an allocation imbalance under the assumed 50/50 design.
+
+Further validation of the experiment assignment mechanism would be recommended before making a final rollout decision.
+
 ## Preliminary Business Recommendation
 
 Based on the observed results, retaining the gate at level 30 appears preferable for Day 7 retention.
