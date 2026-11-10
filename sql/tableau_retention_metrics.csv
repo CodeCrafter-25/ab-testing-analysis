@@ -1,0 +1,5 @@
+version,metric,total_users,retained_users,retention_rate,avg_game_rounds
+gate_30,Retention D1,44700,20034,0.44818791946308723,52.46
+gate_40,Retention D1,45489,20119,0.44228274967574577,51.3
+gate_30,Retention D7,44700,8502,0.19020134228187918,52.46
+gate_40,Retention D7,45489,8279,0.18200004396667327,51.3
