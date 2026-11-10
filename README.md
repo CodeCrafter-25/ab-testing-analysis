@@ -107,6 +107,29 @@ However, the p-value is below 0.05, indicating some evidence of an allocation im
 
 Further validation of the experiment assignment mechanism would be recommended before making a final rollout decision.
 
+### Tableau Retention Analysis — Initial Visualization
+
+**Completed:**
+- Created `tableau_retention_metrics` in Google BigQuery.
+- Prepared retention data for Tableau visualization.
+- Exported the aggregated dataset to CSV.
+- Connected the dataset to Tableau Public.
+- Created the first worksheet: Retention Comparison.
+- Configured percentage formatting and experiment group colors.
+- Validated the results against SQL calculations.
+
+**Key Findings:**
+- Control D1 Retention: 44.82%
+- Treatment D1 Retention: 44.23%
+- Control D7 Retention: 19.02%
+- Treatment D7 Retention: 18.20%
+
+**Next Steps:**
+- Create KPI cards.
+- Visualize statistical significance and confidence intervals.
+- Build the final A/B Testing Dashboard.
+- Add business insights and recommendations.
+
 ## Preliminary Business Recommendation
 
 Based on the observed results, retaining the gate at level 30 appears preferable for Day 7 retention.
