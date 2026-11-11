@@ -39,7 +39,7 @@ The main objective is to determine which version performs better in terms of Day
 - Pandas and NumPy — Data analysis libraries
 - Statsmodels — Two-proportion Z-tests
 - Google Colab — Python development environment
-- Tableau — Planned data visualization
+- Tableau Public — Retention analysis and dashboard development
 
 ## Data Quality Checks
 
@@ -136,10 +136,50 @@ Based on the observed results, retaining the gate at level 30 appears preferable
 
 Before making a final decision, the analysis will be extended with confidence intervals, additional validation and further interpretation.
 
+### Tableau Dashboard — KPI Cards and Retention Comparison
+
+An interactive A/B testing dashboard is being developed in Tableau Public to communicate experiment performance and support product decisions.
+
+**Completed:**
+- Created a KPI card displaying the total number of experiment participants.
+- Developed calculated fields for Day 1 and Day 7 retention differences.
+- Calculated retention differences as Treatment minus Control.
+- Displayed differences in percentage points (pp).
+- Integrated three KPI cards and the Retention Comparison chart into one dashboard.
+- Improved typography, alignment, chart labels, and color formatting.
+- Validated KPI values against SQL and Python results.
+
+**Dashboard KPIs:**
+
+| KPI | Value |
+|---|---:|
+| Total Players | 90,189 |
+| D1 Retention Difference | -0.591 pp |
+| D7 Retention Difference | -0.820 pp |
+
+**Interpretation:**
+
+The treatment group (gate_40) demonstrated lower retention rates than the control group (gate_30) on both Day 1 and Day 7.
+
+The Day 1 difference was not statistically significant (p = 0.074410), whereas the Day 7 decrease was statistically significant (p = 0.001554).
+
+The dashboard will be extended with confidence intervals and an experiment validation note before final publication.
+
+**Dashboard Preview:**
+
+![A/B Testing Dashboard — Version 1](visualizations/ab_testing_dashboard_v1.png)
+
 ## Next Steps
 
-- Calculate 95% confidence intervals
-- Complete statistical interpretation
-- Prepare visualizations in Tableau
-- Document business insights and recommendations
-- Finalize the project portfolio documentation
+- [x] Prepare and validate the dataset using SQL.
+- [x] Calculate Day 1 and Day 7 retention rates.
+- [x] Perform statistical significance testing using Python.
+- [x] Calculate 95% confidence intervals.
+- [x] Perform Sample Ratio Mismatch (SRM) validation.
+- [x] Create the Retention Comparison visualization.
+- [x] Develop the three main Tableau KPI cards.
+- [ ] Add statistical significance indicators to Tableau.
+- [ ] Visualize 95% confidence intervals.
+- [ ] Include experiment validation limitations and business recommendations.
+- [ ] Publish the final Tableau Dashboard.
+- [ ] Complete the final GitHub documentation and portfolio review.
