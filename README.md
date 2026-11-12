@@ -132,9 +132,15 @@ Further validation of the experiment assignment mechanism would be recommended b
 
 ## Preliminary Business Recommendation
 
-Based on the observed results, retaining the gate at level 30 appears preferable for Day 7 retention.
+The results suggest that retaining the gate at level 30 is preferable for Day 7 player retention.
 
-Before making a final decision, the analysis will be extended with confidence intervals, additional validation and further interpretation.
+Moving the gate to level 40 resulted in a statistically significant decrease in Day 7 retention of approximately 0.82 percentage points (p = 0.001554).
+
+The 95% confidence interval for the difference was [-1.328, -0.312] percentage points.
+
+However, the experiment allocation showed some evidence of imbalance under the assumed 50/50 design (SRM p = 0.008608).
+
+Therefore, the recommendation is provisional until the experiment design and allocation mechanism have been further validated.
 
 ### Tableau Dashboard — KPI Cards and Retention Comparison
 
