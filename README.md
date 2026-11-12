@@ -169,6 +169,25 @@ The dashboard will be extended with confidence intervals and an experiment valid
 
 ![A/B Testing Dashboard — Version 1](visualizations/ab_testing_dashboard_v1.png)
 
+### Tableau Dashboard — Statistical Significance
+
+Extended the A/B testing dashboard with statistical significance results and confidence intervals.
+
+**Completed:**
+- Added Day 1 and Day 7 statistical significance indicators.
+- Displayed p-values from two-proportion Z-tests.
+- Included 95% confidence intervals calculated using the Newcombe method.
+- Added an experiment validation note covering Sample Ratio Mismatch (SRM).
+
+**Key Findings:**
+- D1 Retention: p = 0.074410 — not statistically significant.
+- D7 Retention: p = 0.001554 — statistically significant decrease.
+- D7 95% CI: [-1.328, -0.312] percentage points.
+- Experiment allocation requires further validation before a final rollout decision.
+
+**Updated Dashboard Preview:**
+
+![A/B Testing Dashboard — Version 2](visualizations/ab_testing_dashboard_v2.png)
 ## Next Steps
 
 - [x] Prepare and validate the dataset using SQL.
@@ -178,7 +197,7 @@ The dashboard will be extended with confidence intervals and an experiment valid
 - [x] Perform Sample Ratio Mismatch (SRM) validation.
 - [x] Create the Retention Comparison visualization.
 - [x] Develop the three main Tableau KPI cards.
-- [ ] Add statistical significance indicators to Tableau.
+- [x] Add statistical significance indicators to Tableau.
 - [ ] Visualize 95% confidence intervals.
 - [ ] Include experiment validation limitations and business recommendations.
 - [ ] Publish the final Tableau Dashboard.
