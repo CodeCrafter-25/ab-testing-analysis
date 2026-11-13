@@ -194,8 +194,39 @@ Extended the A/B testing dashboard with statistical significance results and con
 **Updated Dashboard Preview:**
 
 ![A/B Testing Dashboard — Version 2](visualizations/ab_testing_dashboard_v2.png)
-## Next Steps
 
+### Tableau Dashboard — Confidence Interval Visualization
+
+Extended the A/B testing dashboard with a visual comparison of 95% confidence intervals for Day 1 and Day 7 retention.
+
+**Completed:**
+- Prepared a confidence interval dataset using Python statistical results.
+- Created horizontal Gantt bars to represent confidence interval ranges.
+- Added point estimates for retention differences between treatment and control.
+- Added a zero-reference line to distinguish statistically significant and non-significant results.
+- Integrated the confidence interval visualization into the main Tableau dashboard.
+
+**Key Findings:**
+- D1 Retention: -0.591 pp, 95% CI [-1.239, +0.058] pp. The interval includes zero.
+- D7 Retention: -0.820 pp, 95% CI [-1.328, -0.312] pp. The interval excludes zero.
+
+**Interpretation:**
+
+The treatment group (gate_40) experienced a statistically significant decrease in Day 7 retention compared with the control group (gate_30).
+
+The Day 1 retention difference was not statistically significant.
+
+These findings should be interpreted with caution until the experiment allocation and potential Sample Ratio Mismatch have been validated.
+
+**Confidence Interval Visualization:**
+
+![Confidence Intervals](visualizations/confidence_intervals.png)
+
+**Updated Dashboard:**
+
+![A/B Testing Dashboard v3](visualizations/ab_testing_dashboard_v3.png)
+
+## Next Steps
 - [x] Prepare and validate the dataset using SQL.
 - [x] Calculate Day 1 and Day 7 retention rates.
 - [x] Perform statistical significance testing using Python.
@@ -204,7 +235,7 @@ Extended the A/B testing dashboard with statistical significance results and con
 - [x] Create the Retention Comparison visualization.
 - [x] Develop the three main Tableau KPI cards.
 - [x] Add statistical significance indicators to Tableau.
-- [ ] Visualize 95% confidence intervals.
+- [x] Visualize 95% confidence intervals.
 - [ ] Include experiment validation limitations and business recommendations.
 - [ ] Publish the final Tableau Dashboard.
 - [ ] Complete the final GitHub documentation and portfolio review.
