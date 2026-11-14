@@ -226,6 +226,16 @@ These findings should be interpreted with caution until the experiment allocatio
 
 ![A/B Testing Dashboard v3](visualizations/ab_testing_dashboard_v3.png)
 
+## Business Insights & Recommendations
+
+The experiment results suggest that moving the progression gate from level 30 to level 40 negatively affected Day 7 player retention.
+
+The recommendation is to avoid rolling out gate_40 based on the current evidence and retain gate_30 provisionally while experiment allocation validity is reviewed.
+
+A potential Sample Ratio Mismatch under the assumed 50/50 allocation remains an important limitation.
+
+For detailed findings, limitations, and product recommendations, see [Business Insights & Recommendations](business_insights.md).
+
 ## Next Steps
 - [x] Prepare and validate the dataset using SQL.
 - [x] Calculate Day 1 and Day 7 retention rates.
