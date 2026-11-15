@@ -8,6 +8,33 @@ The experiment tested whether moving the first progression gate from level 30 to
 
 The analysis uses SQL (Google BigQuery) and Python to evaluate retention rates and determine whether observed differences are statistically significant.
 
+## Tableau Dashboard
+
+The interactive Tableau dashboard presents the results of the Cookie Cats A/B experiment, including player retention, statistical significance, and confidence intervals.
+
+**Key Dashboard Features:**
+- Total experiment participants: 90,189
+- Day 1 retention difference: -0.591 percentage points
+- Day 7 retention difference: -0.820 percentage points
+- Statistical significance analysis
+- 95% confidence interval visualization
+- Experiment validation notes
+### Interactive Dashboard
+
+Explore the published Cookie Cats A/B Testing dashboard on Tableau Public:
+
+[**View Interactive A/B Testing Dashboard**](https://public.tableau.com/views/ABTesting_17943368840910/ABTestingAnalysis)
+
+The dashboard includes retention comparisons, statistical significance results, 95% confidence intervals, and experiment validation notes.
+
+### Dashboard Preview
+
+![Cookie Cats A/B Testing Dashboard](visualizations/ab_testing_dashboard_v3.png)
+
+**Main Finding:** Moving the progression gate from level 30 to level 40 was associated with a statistically significant decrease in Day 7 retention.
+
+The results remain provisional pending validation of the experiment allocation.
+
 ## Business Problem
 
 The company wants to understand whether changing the gate placement improves player engagement and retention.
@@ -124,12 +151,6 @@ Further validation of the experiment assignment mechanism would be recommended b
 - Control D7 Retention: 19.02%
 - Treatment D7 Retention: 18.20%
 
-**Next Steps:**
-- Create KPI cards.
-- Visualize statistical significance and confidence intervals.
-- Build the final A/B Testing Dashboard.
-- Add business insights and recommendations.
-
 ## Preliminary Business Recommendation
 
 The results suggest that retaining the gate at level 30 is preferable for Day 7 player retention.
@@ -169,7 +190,9 @@ The treatment group (gate_40) demonstrated lower retention rates than the contro
 
 The Day 1 difference was not statistically significant (p = 0.074410), whereas the Day 7 decrease was statistically significant (p = 0.001554).
 
-The dashboard will be extended with confidence intervals and an experiment validation note before final publication.
+The Tableau dashboard includes retention KPI cards, statistical significance indicators, 95% confidence interval visualizations, and experiment validation notes.
+
+The dashboard provides a comprehensive overview of the A/B testing results and supports data-driven product decisions.
 
 **Dashboard Preview:**
 
