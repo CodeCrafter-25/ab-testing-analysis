@@ -8,6 +8,10 @@ The experiment tested whether moving the first progression gate from level 30 to
 
 The analysis uses SQL (Google BigQuery) and Python to evaluate retention rates and determine whether observed differences are statistically significant.
 
+## Reproducing the SQL Analysis
+
+Load `cookie_cats.csv` into your BigQuery project as `ab_testing.cookie_cats_raw`. Replace the project ID in both SQL scripts with your own, then run `sql/ab_testing_analysis.sql` followed by `sql/tableau_retention_metrics.sql`.
+
 ## Tableau Dashboard
 
 The interactive Tableau dashboard presents the results of the Cookie Cats A/B experiment, including player retention, statistical significance, and confidence intervals.
@@ -155,7 +159,7 @@ Further validation of the experiment assignment mechanism would be recommended b
 
 The results suggest that retaining the gate at level 30 is preferable for Day 7 player retention.
 
-Moving the gate to level 40 resulted in a statistically significant decrease in Day 7 retention of approximately 0.82 percentage points (p = 0.001554).
+Moving the gate to level 40 resulted in a statistically significant decrease in Day 7 retention was 0.82 percentage points lower in the gate_40 group than in the gate_30 group (p = 0.001554).
 
 The 95% confidence interval for the difference was [-1.328, -0.312] percentage points.
 
@@ -270,5 +274,5 @@ For detailed findings, limitations, and product recommendations, see [Business I
 - [x] Add statistical significance indicators to Tableau.
 - [x] Visualize 95% confidence intervals.
 - [x] Include experiment validation limitations and business recommendations.
-- [ ] Publish the final Tableau Dashboard.
-- [ ] Complete the final GitHub documentation and portfolio review.
+- [x  Publish the final Tableau Dashboard.
+- [x] Complete the final GitHub documentation and portfolio review.
