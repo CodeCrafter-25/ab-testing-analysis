@@ -274,5 +274,5 @@ For detailed findings, limitations, and product recommendations, see [Business I
 - [x] Add statistical significance indicators to Tableau.
 - [x] Visualize 95% confidence intervals.
 - [x] Include experiment validation limitations and business recommendations.
-- [x  Publish the final Tableau Dashboard.
+- [x] Publish the final Tableau Dashboard.
 - [x] Complete the final GitHub documentation and portfolio review.
