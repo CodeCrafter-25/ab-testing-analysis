@@ -159,7 +159,9 @@ Further validation of the experiment assignment mechanism would be recommended b
 
 The results suggest that retaining the gate at level 30 is preferable for Day 7 player retention.
 
-Moving the gate to level 40 resulted in a statistically significant decrease in Day 7 retention was 0.82 percentage points lower in the gate_40 group than in the gate_30 group (p = 0.001554).
+Day 7 retention was 0.82 percentage points lower in the gate_40 group than in the gate_30 group (p = 0.001554).
+
+The observed difference was statistically significant. However, the experiment allocation requires further validation before making a definitive causal conclusion.
 
 The 95% confidence interval for the difference was [-1.328, -0.312] percentage points.
 
@@ -262,6 +264,27 @@ The recommendation is to avoid rolling out gate_40 based on the current evidence
 A potential Sample Ratio Mismatch under the assumed 50/50 allocation remains an important limitation.
 
 For detailed findings, limitations, and product recommendations, see [Business Insights & Recommendations](business_insights.md).
+
+## Reproducing the Analysis
+
+To reproduce the SQL analysis:
+1. Download the Cookie Cats dataset from Kaggle.
+2. Upload the dataset to Google BigQuery.
+3. Create a dataset named `ab_testing`.
+4. Import the data into a table named `cookie_cats_raw`.
+5. Replace the Google Cloud project ID in the SQL scripts with your own.
+6. Run `sql/ab_testing_analysis.sql`.
+7. Run `sql/tableau_retention_metrics.sql`.
+
+For statistical analysis, open `notebooks/ab_testing_analysis.ipynb` in Google Colab and execute the cells.
+
+Required Python libraries:
+- pandas
+- numpy
+- scipy
+- statsmodels
+
+The Tableau dashboard can be recreated using the aggregated retention data and confidence interval CSV files.
 
 ## Next Steps
 - [x] Prepare and validate the dataset using SQL.
