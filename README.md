@@ -121,22 +121,32 @@ The difference was statistically significant (p = 0.001554), suggesting that mov
 
 ### Sample Ratio Mismatch (SRM) Validation
 
-A Chi-square goodness-of-fit test was conducted to evaluate whether the observed experiment allocation differed from the assumed 50/50 split.
+A Chi-square goodness-of-fit test was performed to compare the observed experiment allocation against an assumed 50/50 allocation.
 
-**Results:**
-- Control group: 44,700 users
-- Treatment group: 45,489 users
+**Allocation Summary:**
+
+| Group | Observed Users | Expected Users | Observed Share |
+|---|---:|---:|---:|
+| Control (gate_30) | 44,700 | 45,094.5 | 49.56% |
+| Treatment (gate_40) | 45,489 | 45,094.5 | 50.44% |
+| Total | 90,189 | 90,189 | 100% |
+
+**Statistical Results:**
+
 - Chi-square statistic: 6.9024
-- P-value: 0.008608
-- SRM significance threshold: 0.001
+- SRM p-value: 0.008608
+- Selected SRM threshold: 0.001
+- Additional significance threshold: 0.05
 
 **Interpretation:**
 
-No statistically significant sample ratio mismatch was detected at the predefined threshold of 0.001.
+At the selected significance threshold of 0.001, the result does not meet the criterion for flagging a Sample Ratio Mismatch.
 
-However, the p-value is below 0.05, indicating some evidence of an allocation imbalance under the assumed 50/50 design.
+However, the observed allocation differs significantly from the assumed 50/50 distribution at a significance threshold of 0.05.
 
-Further validation of the experiment assignment mechanism would be recommended before making a final rollout decision.
+The planned allocation ratio has not been independently verified. Therefore, the SRM test results are conditional on the assumed 50/50 experimental design.
+
+The intended allocation ratio and randomization mechanism should be verified before making a definitive product rollout decision.
 
 ### Tableau Retention Analysis — Initial Visualization
 
