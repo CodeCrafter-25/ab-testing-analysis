@@ -39,17 +39,26 @@ The observed difference was approximately -0.82 percentage points, equivalent to
 
 ## 3. Experiment Validation
 
-A Sample Ratio Mismatch (SRM) test was conducted under an assumed 50/50 allocation.
+A Sample Ratio Mismatch (SRM) test was performed to assess whether the observed experiment allocation differed from an assumed 50/50 split.
 
-Results:
+**Results:**
 
+- Total participants: 90,189
+- Observed control group: 44,700 (49.56%)
+- Observed treatment group: 45,489 (50.44%)
+- Expected users per group: 45,094.5
 - Chi-square statistic: 6.9024
 - SRM p-value: 0.008608
-- SRM threshold used: 0.001
 
-The test did not detect a mismatch at the 0.001 threshold. However, the p-value is below 0.05, suggesting potential allocation imbalance under the assumed 50/50 design.
+**Interpretation:**
 
-The expected allocation ratio and randomization mechanism should be verified before treating the experiment results as fully reliable.
+The result does not meet the SRM flagging criterion at the selected significance threshold of 0.001. However, the allocation imbalance is statistically significant at a threshold of 0.05 under the assumed 50/50 allocation.
+
+The planned allocation ratio has not been independently verified.
+
+Consequently, the retention results should be interpreted with caution, and the business recommendation remains provisional.
+
+Before making a final rollout decision, the intended allocation ratio, randomization mechanism, and potential sources of allocation imbalance should be investigated.
 
 ## 4. Business Recommendations
 
